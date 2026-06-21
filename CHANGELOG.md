@@ -7,6 +7,8 @@
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-06-20
+
 A focused stability pass after the 0.5.0 Capture release — seven bug fixes targeting the most-reported regressions from the tracker. Personality LLM now actually uses the refinement model you picked instead of silently defaulting to Qwen3 0.6B, long-form Whisper transcription works on the PyTorch path (not just MLX), CUDA downloads no longer crash on unsupported platforms, model downloads fail fast on genuine errors instead of retrying infinitely, and avatar uploads enforce a 10MB size cap with extension validation. Two smaller quality-of-life fixes round out the batch: the dictate pill no longer aborts on Linux when hidden, and the deprecated `datetime.utcnow()` calls that were printing warnings on every request have been replaced with `datetime.now(UTC)`.
 
 ### Bug Fixes
@@ -753,6 +755,8 @@ The first public release of Voicebox — an open-source voice synthesis studio p
 
 Tauri v2, React, TypeScript, Tailwind CSS, FastAPI, Qwen3-TTS, Whisper, SQLite
 
+[Unreleased]: https://github.com/jamiepine/voicebox/compare/v0.6.0...HEAD
+[0.6.0]: https://github.com/jamiepine/voicebox/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/jamiepine/voicebox/compare/v0.4.5...v0.5.0
 [0.4.5]: https://github.com/jamiepine/voicebox/compare/v0.4.4...v0.4.5
 [0.4.4]: https://github.com/jamiepine/voicebox/compare/v0.4.3...v0.4.4
